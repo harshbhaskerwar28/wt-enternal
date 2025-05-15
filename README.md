@@ -32,6 +32,22 @@ The frames structure divides the page into header, navigation, content, and foot
 </html>
 ```
 
+### content.html
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h2>Welcome to the Bookstore</h2>
+    <p>Select a category to view books.</p>
+  </main>
+</body>
+</html>
+```
+
 ### header.html
 ```html
 <!DOCTYPE html>
