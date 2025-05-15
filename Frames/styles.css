@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+header, nav, main, footer {
+  padding: 10px;
+}
+
+header {
+  background-color: lightblue;
+  text-align: center;
+}
+
+nav {
+  background-color: #f0f0f0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

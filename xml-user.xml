@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+  <user id="u001">
+    <username>booklover99</username>
+    <password hash="SHA-256">5e884898da28047151d0e56f8dc6...</password>
+    <email>booklover99@example.com</email>
+    
+    <purchaseHistory>
+      <purchase>
+        <bookTitle>Book One</bookTitle>
+        <date>2025-03-12</date>
+        <price>10.99</price>
+      </purchase>
+      <purchase>
+        <bookTitle>Book Two</bookTitle>
+        <date>2025-04-01</date>
+        <price>14.50</price>
+      </purchase>
+    </purchaseHistory>
+  </user>
+
+  <user id="u002">
+    <username>reader123</username>
+    <password hash="SHA-256">6b3a55e0261b0304143f805a249f...</password>
+    <email>reader123@example.com</email>
+    
+    <purchaseHistory>
+      <purchase>
+        <bookTitle>Book Three</bookTitle>
+        <date>2025-02-20</date>
+        <price>12.00</price>
+      </purchase>
+    </purchaseHistory>
+  </user>
+</users>

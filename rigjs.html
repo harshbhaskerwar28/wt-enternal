@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<body style="text-align:center;font-family:sans-serif;margin-top:50px">
+<style>
+  input, button {
+    margin: 5px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+  #f, #b { 
+    background: none; 
+    color: blue; 
+    border: none; 
+    cursor: pointer; 
+    text-decoration: underline;
+  }
+</style>
+
+<h2 id="t">Register</h2>
+
+<!-- Registration Form -->
+<form id="r" onsubmit="return v()">
+  <input id="u" placeholder="Username"><br>
+  <input id="p" type="password" placeholder="Password"><br>
+  <input id="cp" type="password" placeholder="Confirm Password"><br>
+  <button>Register</button><br>
+  <button type="button" id="f" onclick="s(1)">Forgot Password?</button>
+</form>
+
+<!-- Forgot Form -->
+<form id="fp" style="display:none" onsubmit="return f()">
+  <input id="e" placeholder="Email"><br>
+  <button>Reset</button><br>
+  <button type="button" id="b" onclick="s(0)">Back to Register</button>
+</form>
+
+<script>
+let emails=["a@x.com","b@y.com"]
+
+function v(){
+  let u=document.getElementById('u').value
+  let p=document.getElementById('p').value
+  let c=document.getElementById('cp').value
+  if(u.length<5)return alert("User"),!1
+  if(p.length<8)return alert("Pass"),!1
+  if(p!=c)return alert("No Match"),!1
+  alert("OK")
+  return!1
+}
+
+function f(){
+  let e=document.getElementById('e').value
+  let r=/^[^@]+@[^@]+\.[^@]+$/
+  if(!r.test(e))return alert("Bad Email"),!1
+  if(!emails.includes(e))return alert("No User"),!1
+  alert("Check Mail")
+  return!1
+}
+
+function s(x){
+  document.getElementById('r').style.display=x?"none":"block"
+  document.getElementById('fp').style.display=x?"block":"none"
+  document.getElementById('t').innerText=x?"Forgot Password":"Register"
+}
+</script>
+</body>
+</html>
